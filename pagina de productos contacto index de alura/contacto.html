@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-Barberia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="img/logo-blanco.png" alt="Logo de la Barberia Alura"></h1>
+            <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="productos.html">Productos</a></li>
+                  <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+           </nav>
+        </div>
+    </header>
+
+<main>
+    <form>
+        <label for="nombreapellido"></label>
+        <input class="input-padron" type="text"  id="nombreapellido"  placeholder="Nombre y Apellido"required>
+
+        <label for="correoelectronico"></label>
+        <input class="input-padron" type="email" id="correoelectronico"  placeholder="Correo electronico" required>
+
+        <label for="telefono"></label>
+        <input  class="input-padron" type="tel" id="telefono"  placeholder="Teléfono" required>
+       
+         <label for="mensaje"></label>
+        <textarea class="input-padron" cols="62" rows="10" id="mensaje"   placeholder="Mensaje" required></textarea>
+         
+
+    <fieldset>
+          <legend>¿Cómo te gustaría qué lo contactemos?</legend>
+        
+           <label for="radio-email"><input type="radio" name="contacto" 
+            value ="email" id="radio-email">Email</label>
+           
+
+           <label for="radio-telefono"><input type="radio"  name="contacto" 
+            value ="telefono" id="radio-telefono">Telefono</label>
+           
+
+           <label for="radio-whatsapp"><input type="radio" name="contacto" 
+            value ="" id="radio-whatsapp" checked>WhatssAp</label>
+           
+
+      </fieldset>
+       
+    <fieldset>
+        <legend>¿En cuál horario prefiere ser atendido?</legend>
+          <select class="select" name="format" id="format">
+              <option selected disabled>Eligir turno</option>
+               <option>Mañana</option>
+               <option>Tarde</option>
+               <option>Noche</option>
+          </select>   
+    </fieldset>
+          <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barberia Alura?</label>
+            
+          <input class ="enviar" type="submit" value="Enviar formulario">
+    </form>
+
+<!--para las tablas el table, el tr para definir secciones y dentro van las dt-->
+    <table>
+        <thead><!--el cuerpo del encabezado-->
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+             </tr>
+        </thead>
+         
+        <tbody><!--el cuerpo de la tabla-->
+            <tr>
+                <td>Lunes</td>
+                <td>08h - 20h</td>
+                
+             </tr>
+    
+             <tr>
+                <td>Miércoles</td>
+                <td>08h - 20h</td>
+                
+             </tr>
+    
+             <tr>
+                <td>Viernes</td>
+                <td>08h - 20h</td>
+                
+             </tr>
+        </tbody>
+
+         
+    </table>
+
+</main>
+
+    <footer class="anchura">
+        <img src="img/logo-blanco.png" alt="Logo de la Barberia Alura">
+        <p class="copyright">&copy; Copyright Barbería Alura - 2020</p>
+    </footer>
+
+    <!----El fieldset sirve para cuando pedimos que registren tarjetas de creditos es por un tipo de conjunto de datos,el legend habia una p de parrafo la cual no va y la cambiamos por legend-->
+</body>
+</html>
